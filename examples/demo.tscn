@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://rb13fysk3fla"]
+
+[ext_resource type="Script" uid="uid://h76mwcwyr034" path="res://examples/player.gd" id="1"]
+[ext_resource type="Script" uid="uid://cxj0q06hty1od" path="res://examples/weapon_data.gd" id="2"]
+
+[sub_resource type="Resource" id="Resource_weapon"]
+script = ExtResource("2")
+
+[node name="InspectorLabelsDemo" type="Node2D" unique_id=318469208]
+
+[node name="Player" type="Node2D" parent="." unique_id=624996882]
+script = ExtResource("1")
+weapon = SubResource("Resource_weapon")
+
+[node name="Instructions" type="Label" parent="." unique_id=1995793995]
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 1000.0
+offset_bottom = 180.0
+text = "Inspector Labels 示例
+请在编辑器中选中 Player，查看右侧检查器。
+此示例用于演示编辑器插件，无需运行游戏。
+在 player.gd 的变量上方添加 # @label 中文名称 即可使用。"

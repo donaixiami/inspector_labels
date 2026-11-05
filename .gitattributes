@@ -1,0 +1,14 @@
+# Normalize source text. Keep only the addon in Git archive downloads.
+* text=auto eol=lf
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/project.godot export-ignore
+/README.md export-ignore
+/README.zh-CN.md export-ignore
+/LICENSE export-ignore
+/CHANGELOG.md export-ignore
+/screenshots export-ignore
+/examples export-ignore
+/tests export-ignore
+/tools export-ignore
+/release export-ignore
